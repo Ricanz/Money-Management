@@ -29,6 +29,10 @@ Route::get('/', function () {
     return view('app/index');
 });
 
+Route::get('/test', function () {
+    return view('test');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');

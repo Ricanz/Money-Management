@@ -1,16 +1,15 @@
 @stack('script')
-<!--   Core JS Files   -->
-<script src="{{ asset('tadmin/js/core/popper.min.js') }}"></script>
-<script src="{{ asset('tadmin/js/core/bootstrap.min.js') }}"></script>
-<script src="{{ asset('tadmin/js/plugins/perfect-scrollbar.min.js') }}"></script>
-<script src="{{ asset('tadmin/js/plugins/smooth-scrollbar.min.js') }}"></script>
-<!-- Kanban scripts -->
-<script src="{{ asset('tadmin/js/plugins/dragula/dragula.min.js') }}"></script>
-<script src="{{ asset('tadmin/js/plugins/jkanban/jkanban.js') }}"></script>
-
-<script src="{{ asset('tadmin/js/plugins/chartjs.min.js') }}"></script>
-
-<script src="{{ asset('tadmin/js/plugins/threejs.js') }}"></script>
-<script src="{{ asset('tadmin/js/plugins/orbit-controls.js') }}"></script>
-
+<!--begin::Global Javascript Bundle(used by all pages)-->
+<script src="{{ asset('tguest/assets/plugins/global/plugins.bundle.js') }}"></script>
+<script src="{{ asset('tguest/assets/js/scripts.bundle.js') }}"></script>
+<!--end::Global Javascript Bundle-->
+<!--begin::Page Vendors Javascript(used by this page)-->
+<script src="{{ asset('tguest/assets/plugins/custom/fullcalendar/fullcalendar.bundle.js') }}"></script>
+<!--end::Page Vendors Javascript-->
+<!--begin::Page Custom Javascript(used by this page)-->
+<script src="{{ asset('tguest/assets/js/custom/widgets.js') }}"></script>
+<script src="{{ asset('tguest/assets/js/custom/apps/chat/chat.js') }}"></script>
+<script src="{{ asset('tguest/assets/js/custom/modals/create-app.js') }}"></script>
+<script src="{{ asset('tguest/assets/js/custom/modals/upgrade-plan.js') }}"></script>
+<!--end::Page Custom Javascript-->
 @yield('scripts');
